@@ -22,9 +22,9 @@ export default function Blanikpico({nazev}: {nazev: string}) {
           </div>
           
           <div className="m-4 p-4 flex justify-evenly gap-8">
-            <Link href="/">Domov</Link>
-            <Link href="/obory">Obory</Link>
-            <Link href="/obory">Obory</Link>
+            <Link className="underline underline-offset-4" href="/">Domov</Link>
+            <Link className="underline underline-offset-4" href="/obory">Obory</Link>
+            <Link className="underline underline-offset-4" href="/aboutus">O projektu</Link>
             
           </div>
         </div>
