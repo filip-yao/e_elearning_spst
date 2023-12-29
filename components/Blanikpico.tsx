@@ -20,7 +20,7 @@ export default function Blanikpico() {
           </div>
           
           <div className="m-4 p-4 flex justify-evenly gap-8">
-            <div>
+            <div className="text-amber-950">
               Menu
             </div>
             <div>
