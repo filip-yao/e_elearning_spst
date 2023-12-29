@@ -1,9 +1,10 @@
 import { Rubik } from "next/font/google";
+import Link from "next/link";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
 
-export default function Blanikpico() {
+export default function Blanikpico({nazev}: {nazev: string}) {
     return (
         <div className={`flex items-center justify-between ${rubik.className}`}>
           <a href="https://www.spst.cz/" target="blank">
@@ -16,19 +17,15 @@ export default function Blanikpico() {
 
           <div>
             <p className="text-center text-3xl">STROJEK</p>
-            <p className="text-center text-xl italic">Alpha-0.0.1</p>
+            <div className="border-b-2"></div>
+            <p className="text-center text-2xl ">{nazev}</p>
           </div>
           
           <div className="m-4 p-4 flex justify-evenly gap-8">
-            <div className="text-amber-950">
-              Menu
-            </div>
-            <div>
-              Menu
-            </div>
-            <div>
-              Menu
-            </div>
+            <Link href="/">Domov</Link>
+            <Link href="/obory">Obory</Link>
+            <Link href="/obory">Obory</Link>
+            
           </div>
         </div>
     );
