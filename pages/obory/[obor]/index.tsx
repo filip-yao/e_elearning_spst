@@ -16,7 +16,7 @@ const router = useRouter();
   return (
     <div className="flex flex-col min-h-screen w-full">
       <main className="flex-1">
-        <Blanikpico nazev={oborObj!.nazev} />
+        <Blanikpico nazev={oborObj?.nazev ??"ERROR-HOVNO HOŘÍ"} />
      
       
       </main>
