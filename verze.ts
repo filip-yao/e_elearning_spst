@@ -1,2 +1,2 @@
-const verze="Alpha-0.0.6";
+const verze="Alpha-0.0.7";
 export default verze;
