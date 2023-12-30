@@ -15,7 +15,7 @@ body {
    height: 100%;  
 
  
-  @apply scrollbar  scrollbar-thumb-white  scrollbar-thumb-rounded-full scrollbar-track-blue-950
+  @apply scrollbar  scrollbar-thumb-gray-400  scrollbar-thumb-rounded-full scrollbar-track-blue-950
 }
 
 @layer base {
