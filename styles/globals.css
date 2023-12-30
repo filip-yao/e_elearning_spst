@@ -9,11 +9,12 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-image: linear-gradient(180deg,
-      hsl(0deg 0% 0%) 12%,
-      hsl(240deg 100% 40%) 91%,
-      hsl(248deg 88% 51%) 100%,
-      hsl(251deg 100% 55%) 100%);
-   height: 100%; 
+      hsl(0deg 0% 0%) 0%,
+      hsl(240deg 82% 9%) 50%,
+      hsl(234deg 67% 11%) 100%);
+   height: 100%;  
+
+ 
   @apply scrollbar  scrollbar-thumb-white  scrollbar-thumb-rounded-full scrollbar-track-blue-950
 }
 
