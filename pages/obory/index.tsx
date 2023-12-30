@@ -1,7 +1,7 @@
 import Blanikpico from "@/components/Blanikpico";
 import Dlazdice from "@/components/Dlaznice";
 import Nohy from "@/components/Nohy";
-import { Atom, DesktopTower, Nut } from "@phosphor-icons/react";
+import { Atom, DesktopTower, GearFine, Nut } from "@phosphor-icons/react";
 import { Rubik } from "next/font/google";
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -27,7 +27,10 @@ export default function Obory() {
     obrazek: <DesktopTower size={100} />
   },{
     nazev: "Mechanik elektrotechnik",
-    obrazek: <Nut size={100} /> 
+    obrazek: <Nut size={100} />
+  },{
+    nazev: "Stojírenství",
+    obrazek: <GearFine size={100} /> 
   }];
 
   return (
