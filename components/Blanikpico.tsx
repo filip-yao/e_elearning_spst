@@ -11,7 +11,7 @@ export default function Blanikpico({nazev}: {nazev: string}) {
             <img
               src="https://www.spst.cz/themes/spst/logo.svg"
               alt="Posrané logo spst"
-              className="h-12 m-8 grayscale opacity-100 hover:grayscale-0"
+              className="h-12 m-8 grayscale hover:grayscale-0"
             />
           </a>
 
