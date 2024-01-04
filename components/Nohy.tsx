@@ -25,7 +25,7 @@ export default function Nohy(){
           <div className={`flex items-center gap-3 bg-black p-4 rounded-xl text-sm border-2  border-gray-400  ${rubik.className}`}>
               <p className="text-center text-[10px] italic">{verze}</p>
               <p>© 2023 STROJEK  BY</p>
-              <a className={`italic font-semibold text-black bg-gray-400 p-2 rounded-2xl text-sm  ${rubik.className}`} href="https://www.instagram.com/philip.yao.cn/" target="_blank"> 
+              <a className={`italic font-semibold text-black bg-gray-400 p-2 rounded-full text-sm  ${rubik.className}`} href="https://www.instagram.com/philip.yao.cn/" target="_blank"> 
                   FILIP YAO
               </a>
           </div> 
