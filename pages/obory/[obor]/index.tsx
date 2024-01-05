@@ -33,7 +33,7 @@ const router = useRouter();
         <div 
           className="grid grid-cols-1 gap-20 m-20 place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 "
         >
-         {predmety.map(predmet => {
+         {predmety?.map(predmet => {
             return <Dlazdice nazev={predmet.nazev} obrazek={predmet.obrazek} path={predmet.path}/>;
          })}
         
