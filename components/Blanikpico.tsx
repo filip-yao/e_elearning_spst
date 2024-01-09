@@ -16,7 +16,7 @@ export default function Blanikpico({nazev}: {nazev: string}) {
             <p className=" text-2xl ">{nazev}</p>
           </div>
           
-          <div className="m-4 p-4 flex justify-evenly gap-8">
+          <div className="m-4 p-4 flex flex-wrap justify-evenly gap-8">
             <Link className="underline underline-offset-4" href="/">Domov</Link>
             <Link className="underline underline-offset-4" href="/obory">Obory</Link>
             <Link className="underline underline-offset-4" href="/aboutus">O projektu</Link>

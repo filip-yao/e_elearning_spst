@@ -24,15 +24,25 @@ export default function Aboutus() {
         <Blanikpico nazev="O PROJEKTU" />
       </main>
       <div className="">
-        <div className=" gap-4 bg-gray-400 bg-opacity-15 m-8 h- p-3 rounded-2xl border-2 border-gray-500 h-screen ">
+        <div className=" gap-4 bg-gray-400 bg-opacity-15 m-8 h- p-3 rounded-2xl border-2 border-gray-500 h-screen">
           <Title text="O Vzniku"></Title>
-          <p className={` m-2 text-m  ${rubik.className}`}>
+          <p className={` m-8 text-m  ${rubik.className}`}>
+          Projekt je dílem nadšení studenta technického lycea.
+          Má za cíl udělat index všech ruzných zdrojů pro výuku dle platných norem.
+           Tak aby bylo vše lehce dohledatelné a přehledné.</p>
+           <Title text="Použité technologie"></Title>
+           <div className="flex m-8 h-32 justify-evenly">
+            <img 
+            src="https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png"
+             alt="logo react"/>
+             <img 
+            src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png"
+             alt="logo react"/>
+            <img 
+            src="https://phosphoricons.com/favicon-512.png"
+             alt="logo react"/>
 
-
-
-
-            
-          </p>
+           </div>
         </div>
      </div>
       <Nohy/>

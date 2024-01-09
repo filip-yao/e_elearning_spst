@@ -11,11 +11,10 @@ const rubik = Rubik({ subsets: ["latin"] });
 export default function Predmet() {
   
 const router = useRouter();
-  const { subject, obor } = router.query; // tady je ta routa v subject
+  const { subject, obor, ucivotext } = router.query; // tady je ta routa v subject
 
   const oborObj = obory.find(o => o.path === obor); // takhle se vyhledava
   const predmety = oborObj?.subjects; // tady mas predmety
-
   const predmetObj = predmety?.find(p => p.path === subject);  // noo tak nejak takhle no
 
   // Já něviiim, dobre ja pomuzu
@@ -26,7 +25,7 @@ const router = useRouter();
     <div className="flex flex-col min-h-screen w-full">
       <main className="flex-1">
         <Blanikpico nazev={predmetObj?.nazev ??"ERROR-HOVNO HOŘÍ"} />
-        
+         
       
       </main>
       
