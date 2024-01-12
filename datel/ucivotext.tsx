@@ -1,11 +1,11 @@
 const ucivotext = [{
     predmet: "bio",
     content: [{
-        title: "Pes",
-        link: "/pica",
+        title: "Buňka",
+        link: "/",
         subContent: [{
-            title: "asgdsfa",
-            link: "/asdfdfsfdas"
+            title: "E-LUC - BUŇKA",
+            link: "https://eluc.ikap.cz/verejne/lekce/2"
         }]
     },
     {
