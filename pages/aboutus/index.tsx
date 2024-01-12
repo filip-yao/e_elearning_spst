@@ -31,16 +31,17 @@ export default function Aboutus() {
           Má za cíl udělat index všech ruzných zdrojů pro výuku dle platných norem.
            Tak aby bylo vše lehce dohledatelné a přehledné.</p>
            <Title text="Použité technologie"></Title>
-           <div className="flex m-8 h-32 justify-evenly">
-            <img 
+           <div className="flex flex-wrap m-8 gap-8 p-3 h-32 justify-center  ">
+          <img className=" p-1 h-32"
             src="https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png"
              alt="logo react"/>
-             <img 
-            src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png"
-             alt="logo react"/>
-            <img 
-            src="https://phosphoricons.com/favicon-512.png"
-             alt="logo react"/>
+             <img className=" p-4 h-32  "
+            src="https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png"
+             alt="logo next.js"/>
+             <img className=" p-7 h-32 "
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TypeScript_Logo_%28Blue%29.svg/2560px-TypeScript_Logo_%28Blue%29.svg.png"
+             alt="logo typescript"/>
+            
 
            </div>
         </div>

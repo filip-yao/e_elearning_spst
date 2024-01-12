@@ -21,15 +21,15 @@ export default function Nohy(){
   };
 
   return (
-      <div className="flex items-center justify-between m-8 ">
-          <div className={`flex items-center gap-3 bg-black p-4 rounded-xl text-sm border-2  border-gray-400  ${rubik.className}`}>
+      <div className="flex items-center justify-between m-8  flex-wrap">
+          <div className={`flex items-center gap-3 m-2 bg-black p-4 rounded-xl text-sm border-2  border-gray-400  ${rubik.className}`}>
               <p className="text-center text-[10px] italic">{verze}</p>
               <p>© 2023 STROJEK  BY</p>
               <a className={`italic font-semibold text-black bg-gray-400 p-2 rounded-full text-sm  ${rubik.className}`} href="https://www.instagram.com/philip.yao.cn/" target="_blank"> 
                   FILIP YAO
               </a>
           </div> 
-      <div className="flex gap-4">
+      <div className="flex gap-4 m-2">
           <a 
               href="https://github.com/filip-yao/e_elearning_spst" target="blank"> 
               <img src="\oprasky\g_logo.png"className="h-12 cursor-pointer fill-white bg-black p-2 rounded-full border-2 border-gray-400"  />

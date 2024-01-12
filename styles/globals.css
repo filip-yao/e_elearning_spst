@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
 
@@ -12,7 +12,8 @@ body {
       hsl(0deg 0% 0%) 0%,
       hsl(240deg 82% 9%) 50%,
       hsl(234deg 67% 11%) 100%);
-   height: 100%;  
+   height: 100%; 
+   
 
  
   @apply scrollbar  scrollbar-thumb-gray-400  scrollbar-thumb-rounded-full scrollbar-track-blue-950

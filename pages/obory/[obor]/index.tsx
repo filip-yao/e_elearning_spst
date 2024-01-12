@@ -7,7 +7,7 @@ import { useParams } from "next/navigation";
 import { useRouter } from "next/router";
 import Predmet from "./[subject]";
 import PredmetDlazdice from "@/components/PredmetDlazdice";
-////
+
 const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Obor() {
