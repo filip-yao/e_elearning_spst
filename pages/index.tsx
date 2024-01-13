@@ -1,6 +1,7 @@
 import Blanikpico from "@/components/Blanikpico";
 import Nohy from "@/components/Nohy";
 import { Rubik } from "next/font/google";
+import Head from "next/head";
 
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -9,8 +10,10 @@ export default function Home() {
   
 
   return (
+    
+
     <div className="flex flex-col min-h-screen w-full justify-between">
-      
+     <Head> <title> Hlavní stránka</title> </Head>
        <div><Blanikpico nazev="VÍTEJTE V ELEARNINGU" /></div>
       
       <div className={`font-medium text-2xl ${rubik.className}`}>

@@ -3,6 +3,7 @@ import Nohy from "@/components/Nohy";
 import Title from "@/components/Title";
 import { PhosphorLogo } from "@phosphor-icons/react";
 import { Rubik } from "next/font/google";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -23,6 +24,11 @@ export default function Aboutus() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Head>
+        <title>O projektu</title>
+      </Head>
+
+
       <main className="flex-1">
         <Blanikpico nazev="O PROJEKTU" />
       </main>

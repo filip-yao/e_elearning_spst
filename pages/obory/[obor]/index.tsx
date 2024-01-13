@@ -7,6 +7,7 @@ import { useParams } from "next/navigation";
 import { useRouter } from "next/router";
 import Predmet from "./[subject]";
 import PredmetDlazdice from "@/components/PredmetDlazdice";
+import Head from "next/head";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ const predmety = oborObj?.subjects;
 //jo nojo mas pravdu ja jsem tunta
   return (
     <div className="flex flex-col min-h-screen w-full">
+      <Head> <title>{oborObj?.nazev ??"ERROR-HOVNO HOŘÍ"}</title> </Head>
       <main className="flex-1">
          <Blanikpico nazev={oborObj?.nazev ??"ERROR-HOVNO HOŘÍ"} /> 
         

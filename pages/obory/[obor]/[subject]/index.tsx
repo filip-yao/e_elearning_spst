@@ -6,6 +6,7 @@ import { Rubik } from "next/font/google";
 import { useParams } from "next/navigation";
 import { useRouter } from "next/router";
 import ucivotext from "@/datel/ucivotext";
+import Head from "next/head";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Predmet() {
   
   return (
     <div className="flex flex-col min-h-screen w-full">
+      <Head><title>{predmetObj?.nazev ??"ERROR-HOVNO HOŘÍ"}</title></Head>
       <main className="flex-1">
         <Blanikpico nazev={predmetObj?.nazev ??"ERROR-HOVNO HOŘÍ"} />
          

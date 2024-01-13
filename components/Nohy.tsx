@@ -43,6 +43,7 @@ export default function Nohy(){
               src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/White_paw_print.svg/2129px-White_paw_print.svg.png"
               className="h-12 cursor-pointer fill-white bg-black p-3 rounded-full border-2 border-gray-400 " 
               onMouseEnter={gay}
+              alt="Tapka"
               onClick={() => router.push("https://mestskapolicie.trebic.cz/utulek-pro-opustena-zvirata-trebic/")}
           />
               
