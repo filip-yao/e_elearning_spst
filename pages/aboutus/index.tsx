@@ -87,7 +87,7 @@ export default function Aboutus() {
           <div className="flex h-40 w-40 p-8 items-center justify-evenly"
           onClick={() => router.push("https://telemetrydeck.com")}
           >
-            <img className=" h-fit  cursor-pointer  "
+            <img className=" cursor-pointer  "
              src="https://cdn.european-alternatives.eu/productLogo/40b3ede3-3459-4939-8bfc-566811033cb9/conversions/telemetrydeck-logo-productLogoWebp.webp"
              alt="logo telemetry deck"/>
           </div>
