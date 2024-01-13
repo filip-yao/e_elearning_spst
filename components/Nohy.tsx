@@ -2,6 +2,7 @@
 import verze from "@/verze";
 import { GithubLogo, GraduationCap } from "@phosphor-icons/react";
 import { Rubik } from "next/font/google";
+import { useRouter } from "next/router";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -16,10 +17,8 @@ export default function Nohy(){
     
   };
 
-  const gayhlas = () => {
-    new Audio("/gay.mp3").play();
-  };
-
+  const router = useRouter();
+ 
   return (
       <div className="flex flex-wrap-reverse items-center justify-center md:justify-between m-8 bg-white bg-opacity-0 rounded-2xl  ">
           <div className={`flex items-center gap-3 m-2 bg-black p-4 rounded-xl text-sm border-2 flex-wrap border-gray-400  ${rubik.className}`}>
@@ -43,8 +42,8 @@ export default function Nohy(){
           <img
               src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/White_paw_print.svg/2129px-White_paw_print.svg.png"
               className="h-12 cursor-pointer fill-white bg-black p-3 rounded-full border-2 border-gray-400 " 
-              onClick={gayhlas}
               onMouseEnter={gay}
+              onClick={() => router.push("https://mestskapolicie.trebic.cz/utulek-pro-opustena-zvirata-trebic/")}
           />
               
 

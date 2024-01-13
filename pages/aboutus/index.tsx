@@ -36,19 +36,20 @@ export default function Aboutus() {
            Tak aby bylo vše lehce dohledatelné a přehledné.</p>
            <Title text="Použité technologie"></Title>
           <div className="flex my-4 mx-12 gap-x-8 p-3  justify-center flex-wrap">
-            <div className="flex h-40 w-40 items-center ">
-              <img className=" h-fit "
-                src="https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png"
+           
+            <div className="flex items-center">
+              <img className="w-24 m-10"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="logo react"/>
             </div>
-          <div className="flex h-40 w-40 items-center ;">
+          <div className="flex h-40 w-40 items-center ">
             <img className=" h-fit invert "
-              src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+              src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
               alt="logo next.js"/>
           </div>
-          <div className="flex h-40 w-40 items-center">
+          <div className="flex h-40 w-40 p-10 items-center">
             <img className=" h-fit "
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TypeScript_Logo_%28Blue%29.svg/2560px-TypeScript_Logo_%28Blue%29.svg.png"
+             src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
              alt="logo typescript"/>
           </div>
           <div className="flex h-40 w-40 items-center">
@@ -61,8 +62,8 @@ export default function Aboutus() {
              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
              alt="logo vercel"/>
           </div>
-          <div className="flex h-40 w-40 items-center">
-            <PhosphorLogo size={65} weight="fill" />
+          <div className="flex justify-evenly h-40 w-40 items-center">
+            <PhosphorLogo size={68} weight="fill" />
           </div>
             
             
