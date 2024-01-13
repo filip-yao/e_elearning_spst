@@ -12,7 +12,7 @@ export default function Blanikpico({nazev}: {nazev: string})  {
   return (
 
           
-        <div className={`flex flex-col md:flex-row items-center justify-between ${rubik.className}`}>
+        <div className={`flex flex-col md:flex-row justify-between ${rubik.className}`}>
           
           
           <div className="flex items-center ">
@@ -34,7 +34,7 @@ export default function Blanikpico({nazev}: {nazev: string})  {
           </div>
           </div>
           
-          <div className="mx-4 md:mt-4 p-4 flex flex-wrap justify-evenly gap-8">
+          <div className="mx-4 md:mt-4 p-4 flex flex-wrap items-center justify-evenly gap-8">
             <Link className="underline underline-offset-4" href="/">Domov</Link>
             <Link className="underline underline-offset-4" href="/obory">Obory</Link>
             <Link className="underline underline-offset-4" href="/aboutus">O projektu</Link>
