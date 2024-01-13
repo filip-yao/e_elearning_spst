@@ -2,6 +2,7 @@
 import verze from "@/verze";
 import { GithubLogo, GraduationCap } from "@phosphor-icons/react";
 import { Rubik } from "next/font/google";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -22,11 +23,14 @@ export default function Nohy(){
   return (
       <div className="flex flex-wrap-reverse items-center justify-center md:justify-between m-8 bg-white bg-opacity-0 rounded-2xl  ">
           <div className={`flex items-center gap-3 m-2 bg-black p-4 rounded-xl text-sm border-2 flex-wrap border-gray-400  ${rubik.className}`}>
+             
               <p className="text-center text-[10px] italic">{verze}</p>
               <p>© 2023 STROJEK  BY</p>
               <a className={`italic font-semibold text-black bg-gray-400 p-2 rounded-full text-sm  ${rubik.className}`} href="https://www.instagram.com/philip.yao.cn/" target="_blank"> 
                   FILIP YAO
               </a>
+              
+              
           </div> 
       <div className="flex gap-4 m-2 ">
           <a 
