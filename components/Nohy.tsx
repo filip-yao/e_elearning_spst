@@ -1,6 +1,6 @@
 
 import verze from "@/verze";
-import { GraduationCap } from "@phosphor-icons/react";
+import { GithubLogo, GraduationCap } from "@phosphor-icons/react";
 import { Rubik } from "next/font/google";
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -21,18 +21,18 @@ export default function Nohy(){
   };
 
   return (
-      <div className="flex items-center justify-between m-8  flex-wrap">
-          <div className={`flex items-center gap-3 m-2 bg-black p-4 rounded-xl text-sm border-2  border-gray-400  ${rubik.className}`}>
+      <div className="flex flex-wrap-reverse items-center justify-center md:justify-between m-8 bg-white bg-opacity-0 rounded-2xl  ">
+          <div className={`flex items-center gap-3 m-2 bg-black p-4 rounded-xl text-sm border-2 flex-wrap border-gray-400  ${rubik.className}`}>
               <p className="text-center text-[10px] italic">{verze}</p>
               <p>© 2023 STROJEK  BY</p>
               <a className={`italic font-semibold text-black bg-gray-400 p-2 rounded-full text-sm  ${rubik.className}`} href="https://www.instagram.com/philip.yao.cn/" target="_blank"> 
                   FILIP YAO
               </a>
           </div> 
-      <div className="flex gap-4 m-2">
+      <div className="flex gap-4 m-2 ">
           <a 
               href="https://github.com/filip-yao/e_elearning_spst" target="blank"> 
-              <img src="\oprasky\g_logo.png"className="h-12 cursor-pointer fill-white bg-black p-2 rounded-full border-2 border-gray-400"  />
+              <GithubLogo size={45} className="h-12 w-12 cursor-pointer fill-white bg-black p-2 rounded-full border-2 border-gray-400"/>
           </a>
           <a 
               href="https://www.spst.cz" target="blank"> 

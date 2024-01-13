@@ -26,6 +26,8 @@ export default function Obory() {
     <div className="flex flex-col min-h-screen ">
       <main className="flex-1">
         <Blanikpico nazev="OBORY" />
+        
+        
         <div className="grid grid-cols-1 gap-20 m-20 place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {obory.map(obor => {
             return <Dlazdice nazev={obor.nazev} obrazek={obor.obrazek} path={obor.path}/>;

@@ -26,8 +26,8 @@ export default function Ucivo({title, link, subContent}: {title: string; link: s
                         return(
                             
                             
-                            <li className="mx-12">
-                                <Link className={`${rubik.className}`} href={sContent.link}> {sContent.title}</Link>         
+                            <li className="mx-12 ">
+                                <Link className={`cursor-pointer hover:underline hover:underline-offset-2  ${rubik.className}`} href={sContent.link}> {sContent.title}</Link>         
                             </li>
                             
                         );               

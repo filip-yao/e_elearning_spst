@@ -1,7 +1,9 @@
 import Blanikpico from "@/components/Blanikpico";
 import Nohy from "@/components/Nohy";
 import Title from "@/components/Title";
+import { PhosphorLogo } from "@phosphor-icons/react";
 import { Rubik } from "next/font/google";
+import { useRouter } from "next/router";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -17,30 +19,53 @@ export default function Aboutus() {
   const gayhlas = () => {
     new Audio("/gay.mp3").play();
   };
+  const router = useRouter();
 
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         <Blanikpico nazev="O PROJEKTU" />
       </main>
-      <div className="">
-        <div className=" gap-4 bg-gray-400 bg-opacity-15 m-8 h- p-3 rounded-2xl border-2 border-gray-500 h-screen">
+      
+      <div className="flex-1">
+        <div className=" gap-4 bg-gray-400 bg-opacity-15 m-8  h-fit p-3 rounded-2xl border-2 border-gray-500 ">
           <Title text="O Vzniku"></Title>
           <p className={` m-8 text-m  ${rubik.className}`}>
           Projekt je dílem nadšení studenta technického lycea.
           Má za cíl udělat index všech ruzných zdrojů pro výuku dle platných norem.
            Tak aby bylo vše lehce dohledatelné a přehledné.</p>
            <Title text="Použité technologie"></Title>
-           <div className="flex flex-wrap m-8 gap-8 p-3 h-32 justify-center  ">
-          <img className=" p-1 h-32"
-            src="https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png"
-             alt="logo react"/>
-             <img className=" p-4 h-32  "
-            src="https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png"
-             alt="logo next.js"/>
-             <img className=" p-7 h-32 "
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TypeScript_Logo_%28Blue%29.svg/2560px-TypeScript_Logo_%28Blue%29.svg.png"
+          <div className="flex my-4 mx-12 gap-x-8 p-3  justify-center flex-wrap">
+            <div className="flex h-40 w-40 items-center ">
+              <img className=" h-fit "
+                src="https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png"
+                alt="logo react"/>
+            </div>
+          <div className="flex h-40 w-40 items-center ;">
+            <img className=" h-fit invert "
+              src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+              alt="logo next.js"/>
+          </div>
+          <div className="flex h-40 w-40 items-center">
+            <img className=" h-fit "
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/TypeScript_Logo_%28Blue%29.svg/2560px-TypeScript_Logo_%28Blue%29.svg.png"
              alt="logo typescript"/>
+          </div>
+          <div className="flex h-40 w-40 items-center">
+            <img className=" h-fit "
+             src="https://tailwindcss.com/_next/static/media/tailwindcss-logotype-white.944c5d0ef628083bb316f9b3d643385c86bcdb3d.svg"
+             alt="logo tailwind"/>
+          </div>
+          <div className="flex h-40 w-40 items-center">
+            <img className=" h-fit invert "
+             src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
+             alt="logo vercel"/>
+          </div>
+          <div className="flex h-40 w-40 items-center">
+            <PhosphorLogo size={65} weight="fill" />
+          </div>
+            
+            
             
 
            </div>
