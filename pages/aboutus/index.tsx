@@ -2,7 +2,7 @@ import Blanikpico from "@/components/Blanikpico";
 import Nohy from "@/components/Nohy";
 import Title from "@/components/Title";
 import { PhosphorLogo } from "@phosphor-icons/react";
-import { Link } from "lucide-react";
+import { Link, LucideLink2Off } from "lucide-react";
 import { Rubik } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -37,10 +37,17 @@ export default function Aboutus() {
       <div className="flex-1">
         <div className=" gap-4 bg-gray-400 bg-opacity-15 m-8  h-fit p-3 rounded-2xl border-2 border-gray-500 ">
           <Title text="O Vzniku"></Title>
-          <p className={` m-8 text-m  ${rubik.className}`}>
+          <p className={` m-8 text-m text-center ${rubik.className}`}>
           Projekt je dílem nadšení studenta technického lycea.
           Má za cíl udělat index všech ruzných zdrojů pro výuku dle platných norem.
            Tak aby bylo vše lehce dohledatelné a přehledné.</p>
+           <Title text="Kontakt"></Title>
+           <div className={`flex flex-col justify-center items-center ${rubik.className}`}>
+            <div><p>Filip Yao</p></div>
+            <div>Email: <a className="underline underline-offset-2" href="mailto:philip@kosmoproduction.eu">philip@kosmoproduction.eu</a></div>
+          
+          
+          </div>
            <Title text="Použité technologie"></Title>
           <div className="flex my-4 mx-12 gap-x-8 p-3  justify-center flex-wrap">
            
@@ -98,7 +105,7 @@ export default function Aboutus() {
 
            </div>
           <Title text="Čím se pyšníme?"></Title>
-          <div className="flex items-center justify-center m-8">
+          <div className="flex items-center justify-center m-8 gap-4">
             <div onClick={() => router.push("https://europa.eu")}>
               
               <img 
@@ -107,7 +114,7 @@ export default function Aboutus() {
                 src="https://static.wixstatic.com/media/fe6658_da3be1bf50e0425ea4136f78be34ccf7~mv2.png/v1/fill/w_307,h_134,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bitdefender-made-in-EU-600.png">
               </img>
             </div>
-            <div className={` m-8 p-2 text-m rounded-md border-2 ${rubik.className}`}>
+            <div className={` p-2 text-m rounded-md border-2 ${rubik.className}`}>
               <p>We are</p>
               <p> OPEN-SOURCE</p>
 
